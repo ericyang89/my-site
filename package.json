@@ -1,0 +1,45 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "my personal site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericyang89/my-site.git"
+  },
+  "keywords": [
+    "site",
+    "blog"
+  ],
+  "author": "chuanzhifeng@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericyang89/my-site/issues"
+  },
+  "homepage": "https://github.com/ericyang89/my-site#readme",
+  "dependencies": {
+    "@next/mdx": "^9.0.1",
+    "next": "^9.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.2",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-mdx": "^1.2.0",
+    "highlight.js": "^9.15.8",
+    "remark-code-frontmatter": "^1.0.0",
+    "remark-emoji": "^2.0.2",
+    "remark-highlight.js": "^5.1.1",
+    "remark-images": "^1.0.0",
+    "typescript": "^3.5.3"
+  }
+}
