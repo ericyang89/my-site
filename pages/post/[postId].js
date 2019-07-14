@@ -1,9 +1,6 @@
 import React from 'react'
 import Content from './../../md/my-first-post.md'
 
-// import hljs from 'highlight.js/lib/highlight';
-import 'highlight.js/styles/github.css';
-
 
 // const H1 = props => <h1 style={{ color: 'tomato' }} {...props} />
 // const InlineCode = props => (

@@ -4,7 +4,7 @@ const codeFormater=require('remark-code-frontmatter')
 const codeHighLight=require('remark-highlight.js')
 
 const withCSS = require('@zeit/next-css')
-const config = withCSS()
+let config;
 
 
 
@@ -15,11 +15,13 @@ const withMDX = require('@next/mdx')({
   }
 })
 
-module.exports = withMDX({
-  ...config,
+config = withMDX({
   pageExtensions: ['js', 'jsx', 'md', 'mdx','ts','tsx']
 })
 
+config=withCSS(config);
+
+module.exports=config;
 // module.exports = withMDX({
 //   pageExtensions: ['js', 'jsx','ts','tsx', 'mdx','md']
 // })
