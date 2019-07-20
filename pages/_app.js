@@ -3,6 +3,9 @@ import App, { Container } from 'next/app';
 
 import 'highlight.js/styles/github.css';
 
+import Header from './../components/Header'
+import GlobalStyle from './../components/GlobalStyle'
+
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
@@ -19,6 +22,8 @@ class MyApp extends App {
 
     return (
       <Container>
+        <GlobalStyle></GlobalStyle>
+        <Header></Header>
         <Component {...pageProps} />
       </Container>
     );

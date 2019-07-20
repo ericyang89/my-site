@@ -4,9 +4,9 @@
   "description": "my personal site",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "start": "next",
     "build": "next build",
-    "start": "next start",
+    "next:start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,9 +25,12 @@
   "homepage": "https://github.com/ericyang89/my-site#readme",
   "dependencies": {
     "@next/mdx": "^9.0.1",
+    "@types/styled-components": "^4.1.18",
+    "babel-plugin-styled-components": "^1.10.6",
     "next": "^9.0.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "@types/node": "^12.6.2",
