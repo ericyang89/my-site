@@ -44,7 +44,7 @@ const Index = () => {
         return (
           <Item isActive={router.pathname === item.url} key={item.title}>
             <Link href={item.url}>
-              <a style={{textDecoration:'none'}}>{item.title}</a>
+              <a>{item.title}</a>
             </Link>
           </Item>
         );
