@@ -1,7 +1,7 @@
 import React, { Children } from 'react'
 import styled from 'styled-components'
 
-const Wrapper=styled.a`
+const Wrapper=styled.span`
     display: inline-block;
     background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
     color: #fff;
@@ -18,8 +18,8 @@ const Wrapper=styled.a`
     border-radius: 5px;
     background-size: 200% auto;
 `;
-const Index=({onClick,children})=>{
-  return <Wrapper onClick={onClick}>
+const Index=({children})=>{
+  return <Wrapper >
     {children}
   </Wrapper>
 }

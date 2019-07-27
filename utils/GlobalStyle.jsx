@@ -10,6 +10,9 @@ const GlobalStyle = createGlobalStyle`
   *, ::after, ::before {
       box-sizing: border-box;
   };
+  svg:hover {
+    fill: #efb6df;
+  };
   a,svg{
     color:inherit;
     transition: all 0.3s ease-in-out;

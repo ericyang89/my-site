@@ -3,7 +3,6 @@ import App, { Container } from 'next/app';
 
 import 'highlight.js/styles/github.css';
 
-import Header from './../components/Header'
 import GlobalStyle from './../utils/GlobalStyle'
 
 class MyApp extends App {
@@ -23,7 +22,6 @@ class MyApp extends App {
     return (
       <Container>
         <GlobalStyle></GlobalStyle>
-        <Header></Header>
         <Component {...pageProps} />
       </Container>
     );

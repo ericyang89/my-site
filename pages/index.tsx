@@ -5,9 +5,11 @@ import styled from "styled-components";
 import Container from "@material-ui/core/Container";
 import GithubIcon from "./../components/icons/Github";
 import LindedinIcon from "./../components/icons/Linkedin";
+import Header from './../components/Header'
+// import { SvgIconProps } from "@material-ui/core/SvgIcon";
 
 const IconList = styled.div`
-  margin: 10px 0 20px 0;
+  margin: 20px 0;
 `;
 
 const IconWrapper = styled.a`
@@ -17,14 +19,16 @@ const IconWrapper = styled.a`
 export default () => {
   return (
     <div>
+      <Header isWhite={true}></Header>
       <Container>
         <div>
           <h3>你好!</h3>
           <h1>我是 杨川</h1>
-          <h5>一名前端工程师，一名教育工作者！</h5>
+          <h5>一名前端工程师，刚入行教育工作者！</h5>
           <IconList>
             <IconWrapper key="github" href="https://github.com/ericyang89">
-              <GithubIcon />
+              <GithubIcon
+              />
             </IconWrapper>
             <IconWrapper
               key="linkedin"
