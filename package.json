@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/ericyang89/my-site#readme",
   "dependencies": {
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
     "@next/mdx": "^9.0.1",
     "@types/styled-components": "^4.1.18",
     "babel-plugin-styled-components": "^1.10.6",

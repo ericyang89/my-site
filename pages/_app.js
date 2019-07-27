@@ -4,7 +4,7 @@ import App, { Container } from 'next/app';
 import 'highlight.js/styles/github.css';
 
 import Header from './../components/Header'
-import GlobalStyle from './../components/GlobalStyle'
+import GlobalStyle from './../utils/GlobalStyle'
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
