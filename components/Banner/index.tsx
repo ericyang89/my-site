@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Link from "next/link";
 
 const Split=styled.span`
-  margin:0 4px;
+  margin:0 14px;
 `;
 const Wrapper = styled.div`
     background: url('/static/banner.png') no-repeat right bottom;
@@ -30,12 +30,19 @@ const Content = styled.div`
   }
 `;
 
-const Index = () => {
+type Props={
+ title:string;
+ name:string;
+ url:string;
+}
+
+const Index:React.SFC<Props> = ({title,name,url}) => {
+
   return (
     <Wrapper>
       <Placer />
       <Content>
-        <h1>我的博客</h1>
+        <h1>{title}</h1>
         <div>
           <Link href="/">
           <a>首页</a>
@@ -43,8 +50,8 @@ const Index = () => {
           <Split>
           &gt;
           </Split>
-          <Link href="/blog">
-          <a>博客</a>
+          <Link href={url}>
+          <a>{name}</a>
           </Link>
         </div>
       </Content>

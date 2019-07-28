@@ -7,6 +7,9 @@
     "start": "next",
     "build": "next build",
     "next:start": "next start",
+    "next:export": "next export",
+    "process":"generage blog page and blog list",
+    "build:blog":"npm run build && npm run process && npm run next:export",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
