@@ -1,33 +1,40 @@
 import React from "react";
-import styled from 'styled-components'
-import Container from '@material-ui/core/Container'
+import styled from "styled-components";
+import Container from "@material-ui/core/Container";
 import Banner from "./../../components/Banner";
 import Header from "./../../components/Header";
-import TwoColumnWrapper from './../../components/TwoColumnWrapper'
-import Catagory from './../../components/Catagory'
-import Item from './Item'
+import TwoColumnWrapper from "./../../components/TwoColumnWrapper";
+import Catagory from "./../../components/Catagory";
+import Item from "./Item";
 
 const BannerWrapper = styled.div`
+  width: 100%;
   margin-top: -100px;
 `;
-const Content =styled.div`
-  min-height:100px;
-  background:red;
+const Content = styled.div`
+  min-height: 100px;
+  background: red;
 `;
-const HeaderSpace=styled.div`
-  height:120px;
+const HeaderSpace = styled.div`
+  height: 120px;
 `;
 const Index = () => (
   <div>
     <Header isWhite={false}></Header>
     <BannerWrapper>
-      <Banner title={'我的博客'} name="博客" url="/blog" />
+      <Banner title={"我的博客"} name="博客" url="/blog" />
     </BannerWrapper>
     <HeaderSpace></HeaderSpace>
-    <TwoColumnWrapper rightComponentList={
-      <Catagory/>
-    }>
+    <TwoColumnWrapper rightComponentList={<Catagory />}>
       <Item></Item>
+      <Item
+        data={{
+          id: "23",
+          title: "afsd",
+          abstract: "asfd",
+          date: "2020-01-01"
+        }}
+      ></Item>
     </TwoColumnWrapper>
   </div>
 );
