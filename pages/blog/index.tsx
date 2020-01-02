@@ -6,6 +6,7 @@ import Header from "./../../components/Header";
 import TwoColumnWrapper from "./../../components/TwoColumnWrapper";
 import Catagory from "./../../components/Catagory";
 import Item from "./Item";
+import blogList from "./../../utils/getPureBlogInfo";
 
 const BannerWrapper = styled.div`
   width: 100%;
@@ -26,15 +27,9 @@ const Index = () => (
     </BannerWrapper>
     <HeaderSpace></HeaderSpace>
     <TwoColumnWrapper rightComponentList={<Catagory />}>
-      <Item></Item>
-      <Item
-        data={{
-          id: "23",
-          title: "afsd",
-          abstract: "asfd",
-          date: "2020-01-01"
-        }}
-      ></Item>
+      {blogList.map(item => (
+        <Item key={item.id} data={item}></Item>
+      ))}
     </TwoColumnWrapper>
   </div>
 );
